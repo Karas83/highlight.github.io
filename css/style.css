@@ -9,6 +9,10 @@
   color: #FFFFFF;
 }
 
+.nav-link1 {
+  padding-left: 0;
+}
+
 #navbar-text {
   font-family: "Montserrat";
   font-style: normal;
@@ -42,6 +46,10 @@
 .nav-link2:hover,
 .nav-link2:focus {
   color: rgba(255, 255, 255, 0.32);
+  outline: none;
+}
+
+.navbar-toggler:focus {
   outline: none;
 }
 
