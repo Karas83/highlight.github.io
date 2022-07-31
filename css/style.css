@@ -1,0 +1,50 @@
+.navbar-light .navbar-nav .nav-link,
+.nav-link1,
+.nav-link2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+
+#navbar-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-right: 10%;
+}
+
+.nav-link2 {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+}
+
+.navbar {
+  margin: 39px 62px;
+}
+
+#navbar-text:focus,
+#navbar-text:hover {
+  color: rgba(255, 255, 255, 0.32);
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover,
+.nav-link1:hover,
+.nav-link1:focus,
+.nav-link2:hover,
+.nav-link2:focus {
+  color: rgba(255, 255, 255, 0.32);
+  outline: none;
+}
+
+body {
+  background-color: blue;
+}
