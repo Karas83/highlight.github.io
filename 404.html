@@ -30,34 +30,30 @@
 </head>
 
 <body>
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
-    <a id="navbar-text" class="navbar-brand" href="index.html">
-      logo
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item ">
-          <a class="nav-link" href="projects.html" alt="index.html">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about_us.html">About us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contacts.html">Contacts</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <a class="nav-link nav-link1" href="#">En</a>
-        <button class="nav-link nav-link2" type="button" class="req">Send Request</button>
-    </form></div>
-  </nav>
+  <header class="header">
+  <div class="header__row">
+      <div class="header__logo"><a href="index.html" class="header__logo_item">LOGO</a></div>
+      <nav class="header__menu menu">
+          <div class="menu__icon icon-menu">
+              <span></span>
+              <span></span>
+              <div class="menu__icon_text">Menu</div>
+          </div>
+          <div class="menu__body">
+              <ul class="menu__list">
+                  <li><a href="index.html" class="menu__link menu__link_home">Home</a></li>
+                  <li><a href="our-projects.html" class="menu__link">Projects</a></li>
+                  <li><a href="about-us.html" class="menu__link">About us</a></li>
+                  <li><a href="news.html" class="menu__link">Blog</a></li>
+                  <li><a href="contact.html" class="menu__link">Contacts</a></li>
+              </ul>
+          </div>
+          
+      </nav>
+      <div class="header__lang"><a href="" class="header__lang_item">En</a></div>
+      <div class="header__button"><a href="#popup" class="header__button_item popup-link">Send Request</a></div>
+  </div>
+</header>
   <section class="error">
     <h1>Page not found</h1>
     <h2>Something went wrong. Page not found</h2>
