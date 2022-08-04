@@ -1,25 +1,5 @@
  
- document.addEventListener('DOMContentLoaded', () => {
 
-    const mediaFiles = document.querySelectorAll('img');
-    let i = 0
-
-    Array.from(mediaFiles).forEach((file, index) => {
-        file.onload = () => {
-            i++
-
-            percents.innerHTML = ((i * 100) / mediaFiles.length).toFixed()
-
-            if(i === mediaFiles.length) {
-                proc.classList.add('preloader--hide')
-                preloader.classList.add('preloader--hide')
-                body.classList.remove('hidden')
-                percents.innerHTML = "light"
-            }
-        }
-    })
-
-})
  
  
  
