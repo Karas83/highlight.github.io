@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
   <title>Design</title>
-  <link rel="shortcut icon" href="img/logo.png">
+  <link rel="shortcut icon" href="#">
   <meta name="viewport"
     content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -19,11 +19,16 @@
 
 </head>
 
-<body>
+<body id="body" class="hidden">
 
-
-
-
+  <div id="preloader" class="preloader">
+    <div class="preloader__loader">
+      <span class="preloader__percents">
+        hi<span id="percents">0</span><span id="proc">%</span>
+      </span>
+    </div>
+    <!-- /.preloader__loader -->
+  </div>
 
   <header class="header">
   <div class="header__row">
@@ -46,7 +51,8 @@
           
       </nav>
       <div class="header__lang"><a href="" class="header__lang_item">En</a></div>
-      <div class="header__button"><a href="#popup" class="header__button_item popup-link">Send Request</a></div>
+      
+      <div class="header__button request"><button class="header__button_item popup-link request-but-menu">Make request</button></div>
   </div>
 </header>
   <section class="info">
@@ -245,7 +251,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at
         luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.
       </h2>
-      <button class="request-but">Make request</button>
+      <button class="request-but request">Make request</button>
     </div>
   </section>
   <section class="pelle">
@@ -302,7 +308,7 @@
           </div>
         </div>
       </div>
-      <button class="request-but2">Make request</button>
+      <button class="request-but2 request">Make request</button>
     </div>
     <section class="footer">
     <h1 class="footer__coop">© Copyright 2018. All rights reserved</h1>
@@ -315,64 +321,108 @@
 
 </section>
   </section>
+    <div class="modal">
+    <div class="modal__content">
+      <button class="modal__close-button"><img src="./img/close.svg" width="12" alt=""></button>
+      <h1>Make request</h1>
+      <div class="modal__make-cont1 modal__make-cont">
+        <div class="modal__make1">
+          <input type="name" placeholder="Name">
+          <input type="phone" placeholder="Phone">
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="modal__make2">
+          <input type="last-name" placeholder="Last name">
+          <input type="city" placeholder="Your city">
+          <div class="select">
+            <input class="select__input" type="hidden" name="">
+            <div class="select__head">Property type</div>
+            <ul class="select__list" style="display: none;">
+              <li class="select__item">House</li>
+              <li class="select__item">Apartments</li>
+              <li class="select__item">Commerce</li>
+              <li class="select__item">Architecture</li>
+            </ul>
+          </div>
+        </div>
+        <input id="comment" type="comment" class="comment" placeholder="Your comment">
+      </div>
+      <div class="modal__make-cont2">
+        <h3>Area (m2)</h3>
+        <div class="radio-cont">
+          <div class="radio-cont1">
+            <div class="r-c">
+              <label for="area1">to 50</label>
+              <input type="radio" id="area1" name="area">
+            </div>
+            <div class="r-c">
+              <label for="area2">50-150</label>
+              <input type="radio" id="area2" name="area" checked>
+            </div>
+            <div class="r-c">
+              <label for="area3">150-250</label>
+              <input type="radio" id="area3" name="area">
+            </div>
+            <div class="r-c">
+              <label for="area4">250-400</label>
+              <input type="radio" id="area4" name="area">
+            </div>
+          </div>
+          <div class="radio-cont2">
+            <div class="r-c">
+              <label for="area5">400-600</label>
+              <input type="radio" id="area5" name="area">
+            </div>
+            <div class="r-c">
+              <label for="area6">600-800</label>
+              <input type="radio" id="area6" name="area">
+            </div>
+            <div class="r-c">
+              <label for="area7">800-1000</label>
+              <input type="radio" id="area7" name="area">
+            </div>
+            <div class="r-c">
+              <label for="area8">1000+</label>
+              <input type="radio" id="area8" name="area">
+            </div>
+          </div>
+        </div>
+        <div>
+
+        </div>
+        <div class="send-req">
+          <div class="down-file__cont">
+            <label for="myfile" class="label"><img src="img/downimg.png"></label>
+            <input type="file" class="my" id="myfile" name="myfile" multiple>
+            <div class="send-tittle">
+              <h3>Attach your file</h3>
+              <h4>File size not more than 10 MB</h4>
+            </div>
+          </div>
+          <button class="request-but-style confirm">Send Request</button>
+        </div>
+        <span class="modal__foot">
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking
+          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+          opposed to using 'Content here, content here', making it look like readable English.
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal2">
+    <div class="modal__content modal__content2">
+      <button class="modal__close-button"><img src="./img/close.svg" width="12" alt=""></button>
+      <h1>Thank you for your message!</h1>
+      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at
+        luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.</h2>
+      <button class="request-but-style back-to-request">Send again</button>
+    </div>
+  </div>
+
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script>
-  /* Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show1");
-  }
-  // Закрыть раскрывающийся список, если пользователь щелкнет за его пределами.
-  window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show1')) {
-          openDropdown.classList.remove('show1');
-        }
-      }
-    }
-  }
-
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1.2,
-    spaceBetween: 0,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
-  const iconMenu = document.querySelector('.icon-menu');
-  if (iconMenu) {
-    const menuBody = document.querySelector('.menu__body');
-    const menuIconText = document.querySelector('.menu__icon_text');
-    const headerButton = document.querySelector('.header__button_item');
-    const headerLogo = document.querySelector('.header__logo_item');
-    const headerLang = document.querySelector('.header__lang_item');
-    const menuLink = document.querySelectorAll('.menu__link');
-
-    iconMenu.addEventListener("click", function (e) {
-      document.body.classList.toggle('_lock');
-      iconMenu.classList.toggle('active');
-      menuBody.classList.toggle('active');
-      menuIconText.classList.toggle('active');
-      headerButton.classList.toggle('active');
-      headerLogo.classList.toggle('active');
-      headerLang.classList.toggle('active');
-      for (var i = 0; i < menuLink.length; i++) {
-        menuLink[i].classList.toggle('active');
-      };
-    });
-  }
-
-</script>
-
+<script src="js/script.js"></script>
 </html>
