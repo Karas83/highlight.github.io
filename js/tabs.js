@@ -1,0 +1,26 @@
+function setupTabs() {
+    document.querySelectorAll('.tab-btn').forEach(button => {
+      button.addEventListener('click', () => {
+  
+  
+        const sidebar = button.parentElement;
+        const tabs = sidebar.parentElement;
+        const tabq = tabs.parentElement;
+        const tabNumber = button.dataset.forTab;
+        const tabActivate = tabq.querySelector(`.tab-content[data-tab="${tabNumber}"]`)
+  
+        sidebar.querySelectorAll('.tab-btn').forEach(button => {
+          button.classList.remove('tab-btn-active')
+        })
+        tabq.querySelectorAll('.tab-content').forEach(tab => {
+          tab.classList.remove('tab-content-active')
+        })
+        button.classList.add('tab-btn-active')
+        tabActivate.classList.add('tab-content-active')
+      })
+    })
+  }
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    setupTabs();
+  })

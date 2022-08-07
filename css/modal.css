@@ -6,11 +6,10 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  visibility: hidden;
+  display: none;
   opacity: 0;
   z-index: 1000;
   background: rgb(0, 0, 0);
-  display: flex;
   justify-content: center;
   align-items: flex-start;
   overflow: auto;
@@ -368,11 +367,10 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  visibility: hidden;
+  display: none;
   opacity: 0;
   z-index: 1000;
   background: rgb(0, 0, 0);
-  display: flex;
   justify-content: center;
   align-items: flex-start;
   overflow-y: scroll;
@@ -536,6 +534,6 @@
 .modal_active {
   position: fixed;
   top: 0;
-  visibility: visible;
+  display: flex;
   opacity: 1;
 }
