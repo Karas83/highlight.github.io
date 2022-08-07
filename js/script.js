@@ -117,3 +117,13 @@
         }
     });
   });
+
+  $(document).ready(function() {
+    $('input[type="file"]').change(function () {
+         var file = this.files; //Files[0] = 1st file
+
+         if (file[0])
+           $('.forlabel').addClass('preview');
+           $('.preview').attr('src', URL.createObjectURL(file[0]));
+     });
+ });
