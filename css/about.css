@@ -532,54 +532,6 @@
   border-radius: 88px;
 }
 
-.footer {
-  display: flex;
-  flex-direction: row;
-  margin: 39px 62px;
-}
-
-.footer__coop,
-.footer__made {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 18px;
-  color: #828282;
-}
-
-.footer__made {
-  margin-left: auto;
-  margin-right: 19px;
-}
-
-.footer__1st,
-.footer__2nd {
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 80%;
-  color: #FFFFFF;
-}
-
-.footer__2nd {
-  margin-left: 20px;
-}
-
-@media (max-width: 600px) {
-  .footer {
-    flex-direction: column;
-  }
-  .footer__1st,
-.footer__2nd,
-.footer__logo-cont,
-.footer__coop,
-.footer__made {
-    margin: 1% auto;
-    text-align: center;
-  }
-}
 .hidden {
   overflow: hidden;
 }
@@ -1120,124 +1072,67 @@
   opacity: 1;
 }
 
-.exp__tab {
+.footer {
+  display: flex;
+  flex-direction: row;
+  margin: 39px 62px;
+}
+
+.footer__coop,
+.footer__made {
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 13px;
-  letter-spacing: 0.06em;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
   color: #828282;
-  border: none;
-  background-color: transparent;
-  border-bottom: 1px solid transparent;
-  padding: 0;
-  margin: 0 5%;
 }
 
-.exp__tab:hover {
-  outline: none;
-  color: #080808;
-  border-bottom: 1px solid #080808;
-}
-
-.exp__tab:focus {
-  outline: none;
-  color: #080808;
-  border-bottom: 1px solid #080808;
-}
-
-.tab-btn-active {
-  outline: none;
-  color: #080808;
-  border-bottom: 1px solid #080808;
-}
-
-.exp__tabs {
-  width: 50%;
-  padding-top: 15px;
+.footer__made {
   margin-left: auto;
+  margin-right: 19px;
 }
 
-.news-tittle {
-  margin-left: 10%;
+.footer__1st,
+.footer__2nd {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 80%;
+  color: #FFFFFF;
 }
 
-.exp__tabs-cont {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 12.5% auto 10%;
+.footer__2nd {
+  margin-left: 20px;
 }
 
-@media (max-width: 830px) {
-  .news-tittle {
-    width: 80%;
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
   }
-  .exp__tabs {
-    width: 94%;
-  }
-  .exp__tabs-cont {
-    margin: 15% auto;
-  }
-}
-@media (max-width: 450px) {
-  .news-tittle {
-    width: 80%;
-  }
-  .exp__tabs {
-    width: 98%;
-    margin: 0 auto;
-  }
-  .exp__tab {
-    margin: 0 3%;
-  }
-  .news-tittle {
-    margin-left: 3%;
-  }
-  .exp__tabs-cont {
-    margin: 30% auto;
+  .footer__1st,
+.footer__2nd,
+.footer__logo-cont,
+.footer__coop,
+.footer__made {
+    margin: 1% auto;
+    text-align: center;
   }
 }
-.exp__tabs-cont1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0 auto;
+.header {
+  position: relative;
 }
 
-.top-nfts_b3 {
-  display: block;
-  float: right;
-}
-
-.exp__tab-img {
-  margin: auto;
-  width: 100%;
-}
-
-.tab-content {
-  display: none;
-}
-
-.tab-content-active {
-  display: block;
-}
-
-.content {
-  width: 100%;
-  margin: 0 auto 0 auto;
-}
-
-.projects {
-  background-color: #080808;
+.about-header {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  background-image: url(../img/aboutheaderbg.png);
+  background-position: center;
+  background-size: cover;
 }
-
-.projects__tittle1 {
+.about-header h1 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -1245,267 +1140,403 @@
   line-height: 44px;
   text-align: center;
   color: #FFFFFF;
-  margin: 10% auto 2%;
+  margin: 15% auto 2%;
+  width: 25%;
 }
-
-.projects__tittle2 {
+.about-header h2 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  color: #828282;
+  color: #FFFFFF;
   width: 30%;
-  margin: 0 auto;
+  margin: 0 auto 15%;
 }
 
-.projects__img-cont {
+@media (max-width: 900px) {
+  .about-header h1,
+.about-header h2 {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .about-header h1,
+.about-header h2 {
+    width: 90%;
+  }
+}
+.about-main__slider {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
   margin-top: 10%;
 }
-
-.projects__img-cont1 {
-  display: flex;
-  width: 100%;
-  margin: 6px auto;
-}
-
-.projects__ref {
-  background-image: url(../img/proj2.png);
-  background-size: cover;
-  width: 45%;
-  margin-left: 5%;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 17px;
-  color: transparent;
-}
-
-.projects__ref2 {
-  background-image: url(../img/news2.png);
-  width: 45%;
-  margin-right: 5%;
-  margin-left: 1%;
-}
-
-.projects__ref3 {
-  display: flex;
-  background-image: url(../img/proj3.png);
-  width: 90%;
-  margin: 1% 5%;
-}
-
-.projects__ref4 {
-  background-image: url(../img/news1.png);
-  margin-right: 5%;
-  margin-left: 0%;
-}
-
-.projects__ref4-spec {
-  margin-right: 1%;
-  margin-left: 5%;
-}
-
-.projects__ref5 {
-  background-color: #F2F2F2;
-  width: 45%;
-  margin-right: 1%;
-  margin-left: 5%;
-}
-
-.projects__ref5-spec {
-  margin-right: 5%;
-  margin-left: 0%;
-}
-
-.projects__ref:hover {
-  color: white;
-  text-decoration: none;
-}
-
-.projects_hover {
+.about-main__slider-cont {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin: 5%;
+  width: 50%;
 }
-
-.projects_hover2 {
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 28px;
-}
-
-.projects_hover2 span {
-  text-transform: uppercase;
-  font-size: 11px;
-}
-
-.projects_hover1 span {
-  margin-right: 5%;
-}
-
-.projects_hover2-spec {
-  margin: 71% 0 5%;
-}
-
-.projects_hover-spec {
-  width: 43%;
-}
-
-.projects__ref5 {
-  display: flex;
-  flex-direction: column;
+.about-main__slider-cont h1 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 36px;
+  line-height: 44px;
   color: #080808;
-  text-decoration: none;
+  margin-left: 20%;
+  width: 50%;
 }
-
-.projects__ref5 img {
-  width: 40%;
-  margin: auto;
-  margin-top: 5%;
-}
-
-.projects__ref5:hover {
-  color: #080808;
-  text-decoration: none;
-}
-
-.projects__ref-tittle {
-  width: 80%;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 34px;
-  color: #080808;
-  margin: 50% 0 0 10%;
-}
-
-.projects__ref-tittle2 {
-  width: 80%;
+.about-main__slider-cont h2 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   color: #080808;
+  margin-left: 20%;
+  margin-bottom: 5%;
+  width: 50%;
+}
+.about-main__slider-row-cont {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin-left: 20%;
+  position: relative;
+}
+
+.swiper {
+  width: 50%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 444px;
+}
+
+.swiper-pagination span {
+  background-image: url(../img/pagforabout.png);
+  width: 20%;
+  height: 1px;
+  border-radius: 0;
+}
+
+#swiper-next {
+  position: relative;
+  right: 0;
+}
+
+#swiper-prev {
+  position: relative;
+  left: 0;
+}
+
+#swiper-pag {
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: black;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 8px;
+}
+
+@media (max-width: 800px) {
+  .swiper-slide img {
+    height: 344px;
+  }
+}
+@media (max-width: 600px) {
+  .swiper-slide img {
+    height: 344px;
+  }
+  .about-main__slider-cont {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .about-main__slider-cont h1,
+.about-main__slider-cont h2,
+.about-main__slider-cont .about-main__slider-row-cont {
+    width: 100%;
+    margin: 5% auto;
+  }
+  .swiper {
+    width: 100%;
+  }
+}
+.about-main__stat {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 10% auto 10%;
+  position: relative;
+}
+.about-main__stat h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
+  color: #080808;
+}
+.about-main__stat span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 132%;
+  color: #080808;
+}
+.about-main__stat p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 132%;
+  color: #080808;
+  margin-top: 10%;
+}
+
+.about-main__stat-img {
+  width: 50%;
+}
+
+.about-main__stat-text {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10%;
+}
+.about-main__stat-text div {
+  width: 50%;
+}
+
+.bgelem {
+  width: 15%;
+  position: absolute;
+  right: -5.59%;
+  bottom: -12%;
+}
+
+@media (max-width: 900px) {
+  .about-main__stat-text {
+    padding: 10%;
+  }
+  .about-main__stat h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 700px) {
+  .bgelem {
+    display: none;
+  }
+  .about-main__stat-img {
+    width: 100%;
+  }
+  .about-main__stat-text {
+    text-align: center;
+    width: 100%;
+    padding: 10% 5%;
+  }
+}
+.about-seo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 15% auto 0;
+}
+.about-seo__tittle {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.about-seo__tittle h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #080808;
+  margin: 10% 0 0 10%;
+}
+.about-seo__tittle h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #080808;
+  margin: 5% 0 0 10%;
+}
+.about-seo__tittle p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 170.66%;
+  color: #080808;
   opacity: 0.7;
-  margin-left: 10%;
+  margin: 5% 0 0 10%;
+  width: 70%;
+}
+.about-seo__tittle img {
+  width: 50%;
+  margin: 25% 0 0;
+}
+.about-seo__info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.about-seo__info div {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 10% 0;
+}
+.about-seo__info img {
+  width: 80%;
+}
+.about-seo__info h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
+  color: #080808;
+}
+.about-seo__info span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 132%;
+  color: #080808;
+  width: 50%;
+}
+.about-seo__info h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #080808;
+  width: 80%;
+}
+
+@media (max-width: 650px) {
+  .about-seo {
+    margin-top: 5%;
+  }
+  .about-seo__tittle {
+    width: 100%;
+  }
+  .about-seo__tittle h1,
+.about-seo__tittle h2,
+.about-seo__tittle p {
+    width: 100%;
+    margin: 5% auto;
+    text-align: center;
+  }
+  .about-seo__tittle img {
+    display: none;
+  }
+  .about-seo__info {
+    width: 100%;
+  }
+  .about-seo__info img,
+.about-seo__info h2 {
+    width: 100%;
+  }
+  .about-seo__info div {
+    width: 33.3%;
+  }
+}
+.pelle {
+  background-image: url(../img/bg2.png);
+  background-size: cover;
+  background-position: center;
   margin-top: 5%;
 }
 
-.projects__ref-tittle3 {
-  margin: 10%;
-  font-size: 10px;
-  line-height: 12px;
-  text-align: left;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #080808;
+.pelle-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 25% 0;
 }
 
-@media (max-width: 900px) {
-  .projects__img-cont1 {
-    flex-direction: column;
-  }
-  .projects__tittle2 {
-    width: 80%;
-  }
-  .projects__ref,
-.projects__ref5 {
-    width: 90%;
-    margin: 1% auto;
-    color: #FFFFFF;
-  }
-  .projects__ref5 img {
-    margin: 5% auto;
-  }
-  .projects__ref-tittle3 {
-    margin: 10%;
-    text-align: left;
-  }
-  .projects__ref-tittle {
-    margin: 10% 0 0 10%;
-  }
-  .projects__ref-tittle2 {
-    display: none;
-  }
-}
-.refs-end {
-  display: flex;
-  flex-direction: row;
-  width: 30%;
-  margin: 10% auto 0;
-  justify-content: space-between;
-}
-.refs-end a {
+.pelle-cont h1 {
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 13px;
-  letter-spacing: 0.06em;
-  color: #080808;
-  text-decoration: none;
-}
-.refs-end a:hover {
-  color: #828282;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
+  color: white;
+  text-align: center;
 }
 
-@media (max-width: 900px) {
-  .refs-end {
-    width: 50%;
-  }
-}
-@media (max-width: 400px) {
-  .refs-end {
-    width: 80%;
-  }
-}
-.news-footer {
-  display: flex;
-  flex-direction: column;
-  background-image: url(../img/newsfooterbg.png);
-  background-position: center;
-  background-size: cover;
+.pelle-cont h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+  opacity: 0.6;
 }
 
-.news-footer-cont {
+.pelle-cont p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .pelle-cont h1 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+.job-offer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #ECECEC;
+}
+.job-offer__cont1 {
   display: flex;
   flex-direction: column;
+  width: 40%;
+  margin-left: 10%;
+  margin-top: 10%;
 }
-.news-footer-cont h1 {
-  width: 30%;
-  margin: 10% auto 0 15%;
-  text-align: left;
+.job-offer__cont1 h1 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 51px;
-  color: #FFFFFF;
+  color: #080808;
+  width: 70%;
+  margin-bottom: 15%;
 }
-.news-footer-cont h2 {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(255, 255, 255, 0.3);
-  width: 30%;
-  margin: 0 15% 2.5% auto;
-}
-.news-footer-cont input {
+.job-offer__cont1 input {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
@@ -1514,52 +1545,78 @@
   color: #FFFFFF;
   height: 30px;
   border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid #515151;
   outline: none;
   background-color: transparent;
-  background-image: url(../img/emailicon.png);
+  background-image: url(../img/arrow-right.png);
   background-repeat: no-repeat;
   background-position: right;
-  width: 30%;
+  width: 70%;
   margin: 0 15% 5% 0;
   float: right;
 }
+.job-offer__cont2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.job-offer__cont2 h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #080808;
+  width: 50%;
+  margin: 45% auto 3%;
+}
+.job-offer__cont2 div {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.job-offer__cont2 a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  color: #080808;
+}
+.job-offer__cont2 a:hover {
+  color: #828282;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 10%;
+}
 
 @media (max-width: 900px) {
-  .news-footer-cont h1 {
-    width: 70%;
-    font-size: 32px;
-    line-height: 39px;
-    margin-bottom: 5%;
+  .job-offer__cont1 h1, .job-offer__cont1 input {
+    width: 100%;
   }
-  .news-footer-cont h2 {
-    width: 70%;
-    margin-left: 15%;
-    margin-bottom: 5%;
-  }
-  .news-footer-cont input {
-    width: 70%;
-    margin-left: 15%;
-    float: none;
+  .job-offer__cont2 h2, .job-offer__cont2 div {
+    width: 80%;
   }
 }
-@media (max-width: 450px) {
-  .news-footer-cont h1 {
-    width: 90%;
-    font-size: 32px;
-    line-height: 39px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .news-footer-cont h2 {
+@media (max-width: 500px) {
+  .job-offer__cont1 {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5%;
   }
-  .news-footer-cont input {
-    width: 90%;
-    margin-left: 5%;
+  .job-offer__cont2 {
+    width: 100%;
+    margin-left: auto;
     margin-right: auto;
+  }
+  .job-offer__cont2 h2 {
+    margin-top: 5%;
   }
 }
